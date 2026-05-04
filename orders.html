@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Orders - Plum Skincare</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <div class="brand">
+        <img src="logo.jpeg" class="logo" alt="Plum Logo">
+        <h2>PLUM</h2>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#about">About</a>
+    </nav>
+</header>
+
+<!-- Orders Section -->
+<section class="orders">
+    <h2>📦 Your Plum Orders</h2>
+    <div id="order-list"></div>
+</section>
+
+<!-- Orders Script -->
+<script>
+function loadOrders() {
+
+    let orders = JSON.parse(localStorage.getItem("orders")) || [];
+    let box = document.getElementById("order-list");
+
+    box.innerHTML = "";
+
+    if (orders.length === 0) {
+        box.innerHTML = "<p>No orders yet 🛒 Start shopping on Plum!</p>";
+        return;
+    }
+
+    orders.forEach((order, i) => {
+
+        let productName = order.product || "Cart Items";
+        let totalAmount = order.total || order.price || 0;
+
+        box.innerHTML += `
+            <div class="order-card">
+                <h4>Plum Order #${i + 1}</h4>
+                <p><b>Product:</b> ${productName}</p>
+                <p><b>Name:</b> ${order.name || "-"}</p>
+                <p><b>Phone:</b> ${order.phone || "-"}</p>
+                <p><b>Address:</b> ${order.address || "-"}</p>
+                <p><b>Total:</b> ₹${totalAmount}</p>
+                <p><b>Order Time:</b> ${order.time || "-"}</p>
+            </div>
+        `;
+    });
+}
+
+window.onload = loadOrders;
+</script>
+
+</body>
+</html>

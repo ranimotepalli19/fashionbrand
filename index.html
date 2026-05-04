@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plum Skincare</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Top Bar -->
+<section class="top-bar">
+<p>✨ Free Delivery on Orders Above ₹999 | 100% Vegan Beauty</p>
+</section>
+
+<!-- Header -->
+<header>
+
+<div class="brand">
+<img src="assets\logo.jpeg" class="logo" alt="Plum Logo">
+<h2>PLUM</h2>
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+
+    <!-- WISHLIST -->
+    <div class="wishlist-icon" onclick="openWishlist()">
+        ❤️ Wishlist (<span id="wishlist-count">0</span>)
+    </div>
+
+    <!-- CART -->
+    <div class="cart-icon" onclick="openCart()">
+        🛒 Cart (<span id="cart-count">0</span>)
+    </div>
+<div class="search-box">
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search Products..."
+        onkeyup="searchProducts()"
+    >
+    <button type="button">🔍</button>
+</div>
+
+</header>
+
+<!-- Promo Section -->
+<section class="promo">
+
+<div class="promo-overlay">
+
+<div class="promo-box">
+<h1>Glow Everyday With Plum 🌿</h1>
+<p>Natural skincare made for healthy glowing skin.</p>
+<button onclick="scrollToProducts()">Shop Now</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- Features -->
+<section class="features">
+
+<div class="feature-box">
+<h3>🌱 Vegan</h3>
+<p>Safe Ingredients</p>
+</div>
+
+<div class="feature-box">
+<h3>💧 Skin Friendly</h3>
+<p>All Skin Types</p>
+</div>
+
+<div class="feature-box">
+<h3>🚚 Fast Delivery</h3>
+<p>Quick Shipping</p>
+</div>
+
+</section>
+
+<!-- Products -->
+<section class="products" id="products">
+
+<h2>Our Skincare Products</h2>
+
+<div class="product-grid">
+
+<div class="item">
+<img src="assets\Dry skin moisturizer .jpeg">
+<h3>Dry Skin Moisturizer</h3>
+<p>₹550</p>
+<button>Add to Cart</button>
+<button>Buy Now</button>
+</div>
+
+<div class="item">
+<img src="assets\facecream.jpeg">
+<h3>Face Cream</h3>
+<p>₹520</p>
+<button>Add to Cart</button>
+<button>Buy Now</button>
+</div>
+
+<div class="item">
+<img src="assets\facemask.jpeg">
+<h3>Face Mask</h3>
+<p>₹450</p>
+<button>Add to Cart</button>
+<button>Buy Now</button>
+</div>
+
+<div class="item">
+<img src="assets\facewash.jpeg">
+<h3>Face Wash</h3>
+<p>₹299</p>
+<button>Add to Cart</button>
+<button>Buy Now</button>
+</div>
+
+<div class="item">
+<img src="assets\greentea oilfree moisturizer.jpeg">
+<h3>Green Tea Oil-Free Moisturizer</h3>
+<p>₹600</p>
+<button>Add to Cart</button>
+<button>Buy Now</button>
+</div>
+
+<div class="item">
+<img src="assets\Hand cream .jpeg">
+<h3>Hand Cream</h3>
+<p>₹350</p>
+<button>Add to Cart</button>
+<button>Buy Now</button>
+</div>
+
+<div class="item">
+<img src="assets\oilcontrolfacewash.jpeg">
+<h3>Oil Control Face Wash</h3>
+<p>₹350</p>
+<button>Add to Cart</button>
+<button>Buy Now</button>
+</div>
+
+<div class="item">
+<img src="assets\Rice water toner .jpeg">
+<h3>Rice Water Toner</h3>
+<p>₹480</p>
+<button>Add to Cart</button>
+<button>Buy Now</button>
+</div>
+
+<div class="item">
+<img src="assets\Rose water toner.jpeg">
+<h3>Rose Water Toner</h3>
+<p>₹460</p>
+<button>Add to Cart</button>
+<button>Buy Now</button>
+</div>
+
+<div class="item">
+<img src="assets\serum.jpeg">
+<h3>Serum</h3>
+<p>₹599</p>
+<button>Add to Cart</button>
+<button>Buy Now</button>
+</div>
+
+<div class="item">
+<img src="assets\sunscreen.jpeg">
+<h3>Sunscreen</h3>
+<p>₹499</p>
+<button>Add to Cart</button>
+<button>Buy Now</button>
+</div>
+
+<div class="item">
+<img src="assets\Toner.jpeg">
+<h3>Toner</h3>
+<p>₹420</p>
+<button>Add to Cart</button>
+<button>Buy Now</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+
+<h2>About Plum</h2>
+
+<p>
+Plum is a vegan skincare brand creating clean, safe and effective beauty products.
+Feel confident with healthy glowing skin every day.
+</p>
+
+</section>
+
+<!-- Reviews -->
+<section class="reviews" id="reviews">
+
+<h2>Customer Reviews</h2>
+
+<div class="review-wrap">
+
+<div class="review-card">
+⭐⭐⭐⭐⭐
+<p>Amazing face wash and very gentle.</p>
+<h4>- Laxmi</h4>
+</div>
+
+<div class="review-card">
+⭐⭐⭐⭐⭐
+<p>Serum gives natural glow quickly.</p>
+<h4>- Thapaswi</h4>
+</div>
+
+<div class="review-card">
+⭐⭐⭐⭐⭐
+<p>Original products and fast delivery.</p>
+<h4>- Rani</h4>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+</section>
+<section class="payments">
+    <h2>Secure Payment Options</h2>
+
+    <div class="payment-icons">
+        <div>💳 Visa</div>
+        <div>💳 Mastercard</div>
+        <div>📱 UPI</div>
+        <div>📲 PhonePe</div>
+        <div>📲 Google Pay</div>
+        <div>🚚 Cash on Delivery</div>
+    </div>
+</section>
+<!-- ORDER SUCCESS POPUP -->
+<div id="order-success" class="order-success">
+    <div class="order-box">
+        <h2>🎉 Order Placed Successfully!</h2>
+        <p>Thank you for shopping with Glam Luxe 💖</p>
+        <button onclick="closeOrderSuccess()">Close</button>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Plum Skincare | All Rights Reserved</p>
+</footer>
+<!-- Cart Box -->
+<div id="cart-box" class="cart-box">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <h3>Total: <span id="cart-total">₹0</span></h3>
+
+    <button onclick="checkout()" class="checkout-btn">
+        Proceed to Checkout
+    </button>
+
+    <button onclick="closeCartBox()">Close</button>
+</div>
+<div id="wishlist-box" class="cart-box">
+    <h2>Your Wishlist ❤️</h2>
+    <div id="wishlist-items"></div>
+    <button onclick="closeWishlistBox()">Close</button>
+</div>
+<!-- Popup -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+<span class="close" onclick="closePopup()">×</span>
+
+        <img id="popup-img">
+
+        <h2 id="popup-title"></h2>
+
+        <p id="popup-desc"></p>
+
+        <h3 id="popup-price"></h3>
+
+<div class="popup-buttons">
+    <button id="add-cart-btn">Add to Cart</button>
+    <button id="buy-now-btn">Buy Now</button>
+</div>
+</div>
+</div>
+<div id="toast" class="toast">
+</div>
+<!-- Checkout Popup -->
+<div id="checkout-popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeCheckout()">×</span>
+
+        <h2>Complete Your Order 💳</h2>
+
+        <input type="text" id="customer-name" placeholder="Your Name">
+        <input type="text" id="customer-phone" placeholder="Phone Number">
+        <textarea id="customer-address" placeholder="Delivery Address"></textarea>
+
+        <h3 id="checkout-product"></h3>
+        <h3 id="checkout-price"></h3>
+
+        <button onclick="placeOrder()">Place Order</button>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
