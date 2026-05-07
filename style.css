@@ -102,7 +102,7 @@ cursor:pointer;
 
 /* Hero Section */
 .promo{
-background:url("Plum kit.jpeg") no-repeat center/cover;
+background:url("assets/Plum kit.jpeg") no-repeat center/cover;
 height:90vh;
 position:relative;
 }
